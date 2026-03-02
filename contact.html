@@ -465,16 +465,72 @@
     // Form submit
     const form = document.getElementById('enquiry-form');
     if (form) {
-      form.addEventListener('submit', function(e) {
+      form.addEventListener('submit', async function(e) {
         e.preventDefault();
         const btn = form.querySelector('[type="submit"]');
-        btn.textContent = 'ENQUIRY RECEIVED — WE\'LL BE IN TOUCH WITHIN 48 HOURS';
+        const originalText = btn.textContent;
+
+        // Loading state
+        btn.textContent = 'SENDING — PLEASE WAIT';
         btn.disabled = true;
-        btn.style.background = '#2A2A26';
-        btn.style.color = '#C4962A';
-        btn.style.border = '1px solid rgba(196,150,42,0.3)';
+        btn.style.opacity = '0.6';
         btn.style.cursor = 'default';
+
+        const payload = {
+          enquiry_type:  document.getElementById('enquiry-type-input').value,
+          plan:          document.getElementById('plan').value,
+          fullname:      document.getElementById('fullname').value,
+          email:         document.getElementById('email').value,
+          country:       document.getElementById('country').value,
+          build_location: document.getElementById('build-location').value,
+          timeline:      document.getElementById('timeline').value,
+          message:       document.getElementById('message').value,
+          nda_confirm:   document.getElementById('nda-confirm').checked,
+        };
+
+        try {
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          const data = await res.json();
+
+          if (res.ok && data.success) {
+            btn.textContent = 'ENQUIRY RECEIVED — WE\'LL BE IN TOUCH WITHIN 48 HOURS';
+            btn.style.opacity = '1';
+            btn.style.background = '#1C1C19';
+            btn.style.color = '#C4962A';
+            btn.style.border = '1px solid rgba(196,150,42,0.35)';
+            btn.style.cursor = 'default';
+            form.querySelectorAll('input,select,textarea').forEach(el => el.disabled = true);
+            document.querySelectorAll('.enquiry-type-btn').forEach(b => b.disabled = true);
+          } else {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            btn.style.opacity = '1';
+            btn.style.cursor = 'pointer';
+            showFormError(data.error || 'Something went wrong. Please email plans@saferoombunker.com directly.');
+          }
+        } catch (err) {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.style.opacity = '1';
+          btn.style.cursor = 'pointer';
+          showFormError('Connection error. Please email plans@saferoombunker.com directly.');
+        }
       });
+
+      function showFormError(msg) {
+        let el = document.getElementById('form-error');
+        if (!el) {
+          el = document.createElement('p');
+          el.id = 'form-error';
+          el.style.cssText = 'color:#E8E4DC;font-size:0.78rem;line-height:1.65;padding:0.85rem 1rem;border:1px solid rgba(196,150,42,0.35);background:rgba(196,150,42,0.06);margin-top:0.75rem;';
+          form.appendChild(el);
+        }
+        el.textContent = msg;
+      }
     }
   </script>
 </body>
