@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Saferoom &amp; Bunker Co.</title>
+  <meta name="description" content="Privacy Policy for Saferoom & Bunker Co. How we collect, use, and protect your personal information.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://saferoombunker.com/privacy">
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bunker: {
+              black:'#0D0D0B', surface:'#141412', panel:'#1C1C19',
+              brass:'#C4962A', 'brass-light':'#D9AE4A', 'brass-dark':'#A37B1E',
+              text:'#E8E4DC', muted:'#5C5A54', border:'#2A2A26',
+            }
+          },
+          fontFamily: {
+            display:['"Bebas Neue"','sans-serif'],
+            serif:['"DM Serif Display"','serif'],
+            sans:['"DM Sans"','sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{background:#0D0D0B;color:#E8E4DC;font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.75;-webkit-font-smoothing:antialiased}
+    .fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.75s cubic-bezier(0.16,1,0.3,1),transform 0.75s cubic-bezier(0.16,1,0.3,1)}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+    [data-delay="1"]{transition-delay:0.08s}[data-delay="2"]{transition-delay:0.16s}[data-delay="3"]{transition-delay:0.24s}
+    .btn-brass{display:inline-flex;align-items:center;gap:0.5rem;background:#C4962A;color:#0D0D0B;font-family:'Bebas Neue',sans-serif;letter-spacing:0.12em;font-size:0.9rem;padding:0.85rem 2rem;border:1px solid #C4962A;cursor:pointer;transition:background 0.2s cubic-bezier(0.16,1,0.3,1),box-shadow 0.2s cubic-bezier(0.16,1,0.3,1),transform 0.15s cubic-bezier(0.16,1,0.3,1);text-decoration:none}
+    .btn-brass:hover{background:#D9AE4A;box-shadow:0 0 0 1px rgba(196,150,42,0.6),0 0 28px rgba(196,150,42,0.2);transform:translateY(-1px)}
+    .btn-brass:active{transform:translateY(0);background:#A37B1E}
+    #nav{background:rgba(20,20,18,0.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid #2A2A26;transition:border-color 0.3s ease}
+    #nav.nav-scrolled{border-bottom-color:rgba(196,150,42,0.2)}
+    .nav-link{color:#5C5A54;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.2s ease}
+    .nav-link:hover{color:#C4962A}
+    .eyebrow{font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:#C4962A}
+    .h-display{font-family:'Bebas Neue',sans-serif;letter-spacing:-0.02em;line-height:0.92}
+    #mobile-menu{display:none;background:#141412;border-top:1px solid #2A2A26;padding:1.5rem 1.5rem 2rem}
+    #mobile-menu.open{display:block}
+    .mobile-link{display:block;padding:0.75rem 0;color:#5C5A54;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #2A2A26;transition:color 0.2s ease}
+    .mobile-link:hover{color:#C4962A}
+    /* Legal content */
+    .legal-section{border-top:1px solid #2A2A26;padding-top:2.5rem;margin-top:2.5rem}
+    .legal-section:first-child{border-top:none;padding-top:0;margin-top:0}
+    .legal-h{font-family:'Bebas Neue',sans-serif;letter-spacing:0.06em;font-size:1.15rem;color:#C4962A;margin-bottom:0.75rem}
+    .legal-p{font-size:0.9rem;color:#9A9690;line-height:1.85;margin-bottom:1rem}
+    .legal-p:last-child{margin-bottom:0}
+    .legal-li{font-size:0.9rem;color:#9A9690;line-height:1.85;margin-bottom:0.4rem;padding-left:1rem;position:relative}
+    .legal-li::before{content:'—';position:absolute;left:0;color:#C4962A;font-size:0.7rem;top:0.15em}
+  </style>
+</head>
+<body class="bg-bunker-black text-bunker-text font-sans overflow-x-hidden">
+
+  <!-- Nav -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display text-bunker-text tracking-widest text-lg leading-none" style="letter-spacing:0.1em;">SAFEROOM <span style="color:#C4962A;">&amp;</span> BUNKER CO.</a>
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="index.html#plans" class="nav-link">Plans</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="why-nz.html" class="nav-link">Why New Zealand</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <a href="index.html#plans" class="btn-brass hidden sm:inline-flex" style="padding:0.6rem 1.4rem;font-size:0.8rem;">Browse Plans</a>
+        <button id="nav-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+          <span id="ham1" class="block bg-bunker-text transition-transform duration-300 origin-center" style="width:20px;height:1.5px;"></span>
+          <span id="ham2" class="block bg-bunker-text transition-opacity duration-300" style="width:20px;height:1.5px;"></span>
+          <span id="ham3" class="block bg-bunker-muted transition-transform duration-300 origin-center" style="width:12px;height:1.5px;"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html#plans" class="mobile-link">Plans</a>
+      <a href="services.html" class="mobile-link">Services</a>
+      <a href="why-nz.html" class="mobile-link">Why New Zealand</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+      <a href="index.html#plans" class="btn-brass w-full justify-center mt-4" style="font-size:0.85rem;">Browse Plans</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-40 pb-20 border-b border-bunker-border">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="eyebrow mb-5 fade-up">Legal</p>
+      <h1 class="h-display text-bunker-text mb-6 fade-up" data-delay="1" style="font-size:clamp(48px,7vw,80px);">PRIVACY<br>POLICY</h1>
+      <p class="font-serif italic text-bunker-muted fade-up" data-delay="2" style="font-size:1.1rem;line-height:1.65;">Last updated: 1 March 2026</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-16">
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-1">
+          <div style="position:sticky;top:5rem;">
+            <p class="eyebrow mb-4" style="font-size:0.6rem;">Contents</p>
+            <nav>
+              <ul class="space-y-2">
+                <li><a href="#who-we-are" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Who We Are</a></li>
+                <li><a href="#information-collected" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Information We Collect</a></li>
+                <li><a href="#how-we-use" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">How We Use It</a></li>
+                <li><a href="#confidentiality" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Confidentiality</a></li>
+                <li><a href="#third-parties" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Third Parties</a></li>
+                <li><a href="#data-retention" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Data Retention</a></li>
+                <li><a href="#your-rights" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Your Rights</a></li>
+                <li><a href="#cookies" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Cookies &amp; Analytics</a></li>
+                <li><a href="#contact-us" class="legal-p" style="text-decoration:none;color:#5C5A54;font-size:0.8rem;transition:color 0.2s ease;" onmouseover="this.style.color='#C4962A'" onmouseout="this.style.color='#5C5A54'">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Main content -->
+        <div class="lg:col-span-3">
+
+          <div id="who-we-are" class="legal-section">
+            <h2 class="legal-h">Who We Are</h2>
+            <p class="legal-p">Saferoom &amp; Bunker Co. Ltd ("we", "our", "us") is a New Zealand–registered company operating from Auckland, New Zealand. We design, license, and manage the construction of certified underground bunker and saferoom structures for principals worldwide.</p>
+            <p class="legal-p">This Privacy Policy applies to all visitors to <strong style="color:#E8E4DC;font-weight:400;">saferoombunker.com</strong> and to all persons who submit enquiries or enter into agreements with us.</p>
+          </div>
+
+          <div id="information-collected" class="legal-section">
+            <h2 class="legal-h">Information We Collect</h2>
+            <p class="legal-p">We collect only what is necessary to respond to your enquiry and deliver our services. This may include:</p>
+            <ul style="list-style:none;padding:0;margin:0 0 1rem 0;">
+              <li class="legal-li">Your name and contact details (email address, telephone number)</li>
+              <li class="legal-li">The nature of your enquiry (plan licensing, turnkey build, full property acquisition)</li>
+              <li class="legal-li">Any information you voluntarily provide in your message</li>
+              <li class="legal-li">Technical data collected automatically by Google Analytics (anonymised IP address, browser type, referring URL, page views, session duration)</li>
+            </ul>
+            <p class="legal-p">We do not collect sensitive personal information (financial account details, government ID numbers, health data) unless you explicitly provide it in the course of a formal engagement, at which point a separate data processing agreement applies.</p>
+          </div>
+
+          <div id="how-we-use" class="legal-section">
+            <h2 class="legal-h">How We Use It</h2>
+            <p class="legal-p">Information you provide is used solely to:</p>
+            <ul style="list-style:none;padding:0;margin:0 0 1rem 0;">
+              <li class="legal-li">Respond to your enquiry and assess fit</li>
+              <li class="legal-li">Prepare and deliver plan licensing documentation or engagement agreements</li>
+              <li class="legal-li">Coordinate build or acquisition services where retained to do so</li>
+              <li class="legal-li">Meet our legal obligations as a New Zealand–registered company and solicitor practice</li>
+            </ul>
+            <p class="legal-p">We do not use your information for marketing, profiling, or any purpose beyond the direct delivery of requested services.</p>
+          </div>
+
+          <div id="confidentiality" class="legal-section">
+            <h2 class="legal-h">Confidentiality</h2>
+            <p class="legal-p">All initial contact is treated as confidential from the moment it is received. We operate under a standard non-disclosure framework: no information you share with us — including the fact that you have made contact — is disclosed to any third party without your written consent.</p>
+            <p class="legal-p">Clients who proceed to a formal engagement execute a mutual NDA prior to any disclosure of project-specific details.</p>
+          </div>
+
+          <div id="third-parties" class="legal-section">
+            <h2 class="legal-h">Third Parties</h2>
+            <p class="legal-p">We do not sell, rent, or trade personal information. We may engage trusted third parties in the delivery of services — for example, structural engineers, construction contractors, or New Zealand legal professionals — but such parties are bound by confidentiality obligations commensurate with this policy.</p>
+            <p class="legal-p">We use Google Analytics to understand aggregate site usage patterns. Google's privacy policy governs how they handle that data. We use anonymised IP addresses and do not enable advertising features.</p>
+          </div>
+
+          <div id="data-retention" class="legal-section">
+            <h2 class="legal-h">Data Retention</h2>
+            <p class="legal-p">Enquiry data is retained for seven years following last contact, in accordance with New Zealand's Limitation Act 2010 and professional record-keeping obligations for solicitor practices. Data may be deleted earlier upon written request, subject to any overriding legal obligation.</p>
+          </div>
+
+          <div id="your-rights" class="legal-section">
+            <h2 class="legal-h">Your Rights</h2>
+            <p class="legal-p">Under the New Zealand Privacy Act 2020, you have the right to:</p>
+            <ul style="list-style:none;padding:0;margin:0 0 1rem 0;">
+              <li class="legal-li">Request access to personal information we hold about you</li>
+              <li class="legal-li">Request correction of inaccurate information</li>
+              <li class="legal-li">Request deletion of information (subject to retention obligations)</li>
+              <li class="legal-li">Complain to the Office of the Privacy Commissioner if you believe your rights have been breached</li>
+            </ul>
+            <p class="legal-p">If you are located in the European Economic Area, you may have additional rights under the GDPR. Please contact us to discuss.</p>
+          </div>
+
+          <div id="cookies" class="legal-section">
+            <h2 class="legal-h">Cookies &amp; Analytics</h2>
+            <p class="legal-p">This site uses Google Analytics (GA4) to collect anonymised usage data — pages visited, session duration, and referring sources. No personally identifiable information is collected through Analytics.</p>
+            <p class="legal-p">Google Analytics sets cookies in your browser. You may opt out by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style="color:#C4962A;text-decoration:none;">Google Analytics Opt-out Browser Add-on</a>.</p>
+            <p class="legal-p">We do not use advertising cookies, tracking pixels, or any form of behavioural profiling.</p>
+          </div>
+
+          <div id="contact-us" class="legal-section">
+            <h2 class="legal-h">Contact Us</h2>
+            <p class="legal-p">To exercise your rights or raise a privacy concern, contact us at:</p>
+            <div style="background:#141412;border:1px solid #2A2A26;padding:1.5rem;margin-top:0.5rem;">
+              <p class="legal-p" style="margin-bottom:0.25rem;"><strong style="color:#E8E4DC;font-weight:400;">Saferoom &amp; Bunker Co. Ltd</strong></p>
+              <p class="legal-p" style="margin-bottom:0.25rem;">Auckland, New Zealand</p>
+              <p class="legal-p" style="margin-bottom:0.25rem;"><a href="mailto:plans@saferoombunker.com" style="color:#C4962A;text-decoration:none;">plans@saferoombunker.com</a></p>
+              <p class="legal-p" style="margin-bottom:0;"><a href="tel:+64220916407" style="color:#C4962A;text-decoration:none;">+64 22 091 6407</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-bunker-surface border-t border-bunker-border py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <p class="font-display text-bunker-brass text-xl tracking-widest mb-3" style="letter-spacing:0.1em;">SAFEROOM <span style="color:#C4962A;">&amp;</span> BUNKER CO.</p>
+          <p class="font-serif italic text-bunker-muted text-sm mb-4">Built Below. Built to Last.</p>
+          <p class="text-bunker-muted text-xs" style="line-height:1.8;">New Zealand's leading designer and licensor of engineer-certified underground bunker and saferoom plans. Serving principals worldwide since 2020.</p>
+        </div>
+        <div>
+          <p class="font-display text-bunker-brass text-sm tracking-widest mb-5" style="letter-spacing:0.2em;">PLANS</p>
+          <nav><ul class="space-y-3">
+            <li><a href="plans/the-sentinel.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Sentinel — 24m²</a></li>
+            <li><a href="plans/the-redoubt.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Redoubt — 96m²</a></li>
+            <li><a href="plans/the-citadel.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Citadel — 216m²</a></li>
+            <li><a href="plans/the-sovereign.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Sovereign — 500m²+</a></li>
+          </ul></nav>
+        </div>
+        <div>
+          <p class="font-display text-bunker-brass text-sm tracking-widest mb-5" style="letter-spacing:0.2em;">CONTACT</p>
+          <address class="not-italic space-y-3">
+            <p class="text-bunker-muted text-sm">Auckland, New Zealand</p>
+            <p><a href="mailto:plans@saferoombunker.com" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">plans@saferoombunker.com</a></p>
+            <p><a href="tel:+64220916407" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">+64 22 091 6407</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="border-t border-bunker-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="text-bunker-muted text-xs" style="letter-spacing:0.03em;">© 2026 Saferoom &amp; Bunker Co. Ltd. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="privacy.html" class="text-bunker-muted text-xs hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;letter-spacing:0.05em;color:#C4962A;">Privacy Policy</a>
+          <a href="terms.html" class="text-bunker-muted text-xs hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;letter-spacing:0.05em;">Terms of Engagement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>nav.classList.toggle('nav-scrolled',window.scrollY>60),{passive:true});
+    const toggle=document.getElementById('nav-toggle'),mobileMenu=document.getElementById('mobile-menu'),ham1=document.getElementById('ham1'),ham2=document.getElementById('ham2'),ham3=document.getElementById('ham3');
+    if(toggle){toggle.addEventListener('click',()=>{const o=mobileMenu.classList.toggle('open');ham1.style.transform=o?'translateY(7px) rotate(45deg)':'';ham2.style.opacity=o?'0':'1';ham3.style.transform=o?'translateY(-5px) rotate(-45deg)':'';ham3.style.width=o?'20px':'12px';})}
+    const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Citadel — 216m² Extended-Stay Bunker Plans | Saferoom &amp; Bunker Co.</title>
+  <meta name="description" content="The Citadel: our most popular underground bunker plan. 216m² multi-level structure engineered for 10–20 persons, 12-month autonomous operation. Engineer-certified, licensable worldwide.">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="US">
+  <link rel="canonical" href="https://saferoombunker.com/plans/the-citadel">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saferoombunker.com/plans/the-citadel">
+  <meta property="og:title" content="The Citadel — 216m² Underground Bunker Plans | Saferoom &amp; Bunker Co.">
+  <meta property="og:description" content="Multi-level, 12-month autonomous underground bunker. Engineer-certified plans licensable worldwide.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bunker: {
+              black:        '#0D0D0B',
+              surface:      '#141412',
+              panel:        '#1C1C19',
+              brass:        '#C4962A',
+              'brass-light':'#D9AE4A',
+              'brass-dark': '#A37B1E',
+              text:         '#E8E4DC',
+              muted:        '#5C5A54',
+              border:       '#2A2A26',
+            }
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            serif:   ['"DM Serif Display"', 'serif'],
+            sans:    ['"DM Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0D0D0B;
+      color: #E8E4DC;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Textures ─── */
+    .texture-grid::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0H0v40' fill='none' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .texture-noise::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      mix-blend-mode: overlay;
+    }
+
+    /* ─── Animations ─── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    [data-delay="1"] { transition-delay: 0.08s; }
+    [data-delay="2"] { transition-delay: 0.16s; }
+    [data-delay="3"] { transition-delay: 0.24s; }
+    [data-delay="4"] { transition-delay: 0.32s; }
+    [data-delay="5"] { transition-delay: 0.40s; }
+    [data-delay="6"] { transition-delay: 0.48s; }
+
+    /* ─── Buttons ─── */
+    .btn-brass {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #C4962A; color: #0D0D0B;
+      font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.12em;
+      font-size: 0.9rem; padding: 0.85rem 2rem;
+      border: 1px solid #C4962A; cursor: pointer;
+      transition: background 0.2s cubic-bezier(0.16,1,0.3,1),
+                  box-shadow 0.2s cubic-bezier(0.16,1,0.3,1),
+                  transform 0.15s cubic-bezier(0.16,1,0.3,1);
+      text-decoration: none;
+    }
+    .btn-brass:hover {
+      background: #D9AE4A;
+      box-shadow: 0 0 0 1px rgba(196,150,42,0.6), 0 0 28px rgba(196,150,42,0.2);
+      transform: translateY(-1px);
+    }
+    .btn-brass:active { transform: translateY(0); background: #A37B1E; }
+    .btn-brass:focus-visible { outline: 2px solid #C4962A; outline-offset: 3px; }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: transparent; color: #E8E4DC;
+      font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.12em;
+      font-size: 0.9rem; padding: 0.85rem 2rem;
+      border: 1px solid rgba(196,150,42,0.35); cursor: pointer;
+      transition: border-color 0.2s cubic-bezier(0.16,1,0.3,1),
+                  box-shadow 0.2s cubic-bezier(0.16,1,0.3,1),
+                  transform 0.15s cubic-bezier(0.16,1,0.3,1);
+      text-decoration: none;
+    }
+    .btn-ghost:hover {
+      border-color: #C4962A;
+      box-shadow: 0 0 0 1px rgba(196,150,42,0.25), 0 0 20px rgba(196,150,42,0.1);
+      transform: translateY(-1px);
+    }
+    .btn-ghost:active { transform: translateY(0); }
+    .btn-ghost:focus-visible { outline: 2px solid #C4962A; outline-offset: 3px; }
+
+    /* ─── Nav ─── */
+    #nav {
+      background: rgba(20,20,18,0.92);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid #2A2A26;
+      transition: border-color 0.3s ease;
+    }
+    #nav.nav-scrolled { border-bottom-color: rgba(196,150,42,0.2); }
+    .nav-link {
+      color: #5C5A54; font-family: 'DM Sans', sans-serif; font-weight: 500;
+      font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover { color: #C4962A; }
+
+    /* ─── Eyebrow labels ─── */
+    .eyebrow {
+      font-family: 'DM Sans', sans-serif; font-weight: 500;
+      font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: #C4962A;
+    }
+
+    /* ─── Section headings ─── */
+    .h-display {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: -0.02em; line-height: 0.92;
+    }
+
+    /* ─── Cards ─── */
+    .card {
+      background: #141412;
+      border: 1px solid #2A2A26;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      border-color: rgba(196,150,42,0.3);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(196,150,42,0.12);
+    }
+    .card-featured {
+      background: #1C1C19;
+      border: 1px solid rgba(196,150,42,0.4);
+      box-shadow: 0 0 0 1px rgba(196,150,42,0.08), 0 12px 48px rgba(0,0,0,0.5);
+    }
+
+    /* ─── Form inputs ─── */
+    .form-input {
+      width: 100%; background: #0D0D0B; color: #E8E4DC;
+      border: 1px solid #2A2A26; padding: 0.85rem 1rem;
+      font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.9rem;
+      outline: none; appearance: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .form-input::placeholder { color: #3A3A36; }
+    .form-input:focus {
+      border-color: #C4962A;
+      box-shadow: 0 0 0 3px rgba(196,150,42,0.12);
+    }
+    .form-label {
+      display: block; font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem; letter-spacing: 0.18em; color: #C4962A;
+      margin-bottom: 0.4rem;
+    }
+    select.form-input option { background: #141412; }
+
+    /* ─── Mobile menu ─── */
+    #mobile-menu {
+      display: none;
+      background: #141412;
+      border-top: 1px solid #2A2A26;
+      padding: 1.5rem 1.5rem 2rem;
+    }
+    #mobile-menu.open { display: block; }
+    .mobile-link {
+      display: block; padding: 0.75rem 0;
+      color: #5C5A54; font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 0.85rem; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      border-bottom: 1px solid #2A2A26;
+      transition: color 0.2s ease;
+    }
+    .mobile-link:hover { color: #C4962A; }
+    .mobile-link:last-of-type { border-bottom: none; }
+
+    /* ─── Spec table ─── */
+    .spec-row {
+      display: grid; grid-template-columns: 160px 1fr;
+      padding: 0.7rem 0; border-bottom: 1px solid #1C1C19;
+      align-items: baseline; gap: 1rem;
+    }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-key {
+      font-family: 'DM Sans', sans-serif; font-size: 0.65rem;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #C4962A; flex-shrink: 0;
+    }
+    .spec-val {
+      font-family: 'DM Sans', sans-serif; font-weight: 300;
+      font-size: 0.85rem; color: #E8E4DC; line-height: 1.6;
+    }
+
+    /* ─── Schematic container ─── */
+    .schematic-panel {
+      background: #0D0D0B;
+      border: 1px solid #2A2A26;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .schematic-label {
+      font-family: 'DM Sans', sans-serif; font-weight: 500;
+      font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: #C4962A; margin-bottom: 1rem;
+    }
+
+    /* ─── Included checklist ─── */
+    .include-item {
+      display: flex; gap: 0.75rem; align-items: flex-start;
+      padding: 0.6rem 0; border-bottom: 1px solid #1C1C19;
+    }
+    .include-item:last-child { border-bottom: none; }
+    .include-check {
+      width: 16px; height: 16px; border: 1px solid rgba(196,150,42,0.5);
+      flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+      margin-top: 0.15rem;
+    }
+
+    /* ─── FAQ ─── */
+    .faq-item {
+      border-bottom: 1px solid #2A2A26;
+    }
+    .faq-question {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      padding: 1.2rem 0; display: flex; justify-content: space-between; align-items: center;
+      font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: #E8E4DC;
+      transition: color 0.2s ease;
+    }
+    .faq-question:hover { color: #C4962A; }
+    .faq-question .faq-icon {
+      width: 20px; height: 20px; border: 1px solid rgba(196,150,42,0.4);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), border-color 0.2s ease;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); border-color: rgba(196,150,42,0.7); }
+    .faq-answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1), padding 0.3s ease;
+    }
+    .faq-item.open .faq-answer { max-height: 400px; }
+    .faq-answer-inner {
+      padding-bottom: 1.2rem;
+      color: #5C5A54; font-size: 0.875rem; line-height: 1.8;
+    }
+
+    /* ─── Plan card thumb ─── */
+    .plan-thumb {
+      width: 100%; height: 140px;
+      background: #0D0D0B;
+      border-bottom: 1px solid #2A2A26;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+
+    /* ─── Stat bar ─── */
+    .stat-divider {
+      width: 1px; height: 50px;
+      background: rgba(196,150,42,0.25);
+      align-self: center;
+    }
+  </style>
+</head>
+
+<body class="bg-bunker-black text-bunker-text font-sans overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="font-display text-bunker-text tracking-widest text-lg leading-none" style="letter-spacing:0.1em;">
+        SAFEROOM <span style="color:#C4962A;">&amp;</span> BUNKER CO.
+      </a>
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="../index.html#plans" class="nav-link">Plans</a></li>
+        <li><a href="../services.html" class="nav-link">Services</a></li>
+        <li><a href="../why-nz.html" class="nav-link">Why New Zealand</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="../contact.html" class="btn-brass hidden sm:inline-flex" style="padding:0.6rem 1.4rem;font-size:0.8rem;">Enquire Now</a>
+        <button id="nav-toggle" class="lg:hidden flex flex-col gap-1.5 p-1" aria-label="Toggle menu">
+          <span class="w-5 h-px bg-bunker-muted transition-opacity" id="ham1"></span>
+          <span class="w-5 h-px bg-bunker-muted transition-opacity" id="ham2"></span>
+          <span class="w-3 h-px bg-bunker-muted transition-opacity" id="ham3"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="../index.html#plans" class="mobile-link">Plans</a>
+      <a href="../services.html" class="mobile-link">Services</a>
+      <a href="../why-nz.html" class="mobile-link">Why New Zealand</a>
+      <a href="../contact.html" class="mobile-link">Contact</a>
+      <a href="../contact.html" class="btn-brass w-full justify-center mt-4" style="font-size:0.85rem;">Enquire Now</a>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       PLAN HERO
+  ═══════════════════════════════════════════ -->
+  <section class="relative texture-grid texture-noise pt-32 pb-20 overflow-hidden" style="background:#0D0D0B;">
+
+    <!-- Brass glow -->
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 60% 80% at 90% 50%, rgba(196,150,42,0.06) 0%, transparent 65%), radial-gradient(ellipse 40% 50% at 5% 80%, rgba(196,150,42,0.04) 0%, transparent 55%); z-index:1;"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-2 mb-10 fade-up">
+        <a href="../index.html" class="eyebrow hover:text-bunker-brass-light" style="color:rgba(196,150,42,0.5);transition:color 0.2s ease;">Home</a>
+        <span style="color:rgba(196,150,42,0.3);font-size:0.7rem;">—</span>
+        <a href="../index.html#plans" class="eyebrow hover:text-bunker-brass-light" style="color:rgba(196,150,42,0.5);transition:color 0.2s ease;">Plans</a>
+        <span style="color:rgba(196,150,42,0.3);font-size:0.7rem;">—</span>
+        <span class="eyebrow">The Citadel</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+        <!-- Left: Identity -->
+        <div>
+          <div class="flex items-center gap-4 mb-5 fade-up" data-delay="1">
+            <p class="eyebrow">Plan 03</p>
+            <div style="width:40px;height:1px;background:rgba(196,150,42,0.4);"></div>
+            <span style="background:#C4962A;color:#0D0D0B;font-family:'Bebas Neue',sans-serif;font-size:0.65rem;letter-spacing:0.18em;padding:0.2rem 0.55rem;">MOST POPULAR</span>
+          </div>
+
+          <h1 class="h-display text-bunker-text mb-3 fade-up" data-delay="2" style="font-size:clamp(72px,10vw,120px);">THE<br>CITADEL</h1>
+
+          <p class="font-serif italic text-xl text-bunker-muted mb-8 fade-up" data-delay="3" style="line-height:1.55;">
+            Extended-Stay Underground Bunker<br>Multi-Level · Engineer-Certified
+          </p>
+
+          <!-- Key stats row -->
+          <div class="flex items-center gap-0 mb-10 fade-up" data-delay="4">
+            <div class="pr-6 border-r border-bunker-border">
+              <p class="font-display text-bunker-brass" style="font-size:2.5rem;line-height:1;">216</p>
+              <p class="eyebrow" style="font-size:0.6rem;margin-top:0.1rem;">Square Metres</p>
+            </div>
+            <div class="px-6 border-r border-bunker-border">
+              <p class="font-display text-bunker-text" style="font-size:2.5rem;line-height:1;">20</p>
+              <p class="eyebrow" style="font-size:0.6rem;margin-top:0.1rem;">Max Occupants</p>
+            </div>
+            <div class="px-6 border-r border-bunker-border">
+              <p class="font-display text-bunker-text" style="font-size:2.5rem;line-height:1;">12</p>
+              <p class="eyebrow" style="font-size:0.6rem;margin-top:0.1rem;">Months Autonomous</p>
+            </div>
+            <div class="pl-6">
+              <p class="font-display text-bunker-text" style="font-size:2.5rem;line-height:1;">2</p>
+              <p class="eyebrow" style="font-size:0.6rem;margin-top:0.1rem;">Levels</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 flex-wrap fade-up" data-delay="5">
+            <a href="../contact.html?plan=citadel" class="btn-brass">License This Plan</a>
+            <a href="#schematics" class="btn-ghost">View Schematics</a>
+          </div>
+        </div>
+
+        <!-- Right: Thumbnail schematic -->
+        <div class="fade-up" data-delay="3">
+          <div class="schematic-panel">
+            <p class="schematic-label">Plan 03 — Overview Schematic</p>
+            <svg viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+              <defs>
+                <pattern id="cg" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M20 0H0v20" fill="none" stroke="#C4962A" stroke-width="0.3" stroke-opacity="0.15"/>
+                </pattern>
+                <pattern id="ch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <line x1="0" y1="0" x2="0" y2="8" stroke="#C4962A" stroke-width="1" stroke-opacity="0.08"/>
+                </pattern>
+              </defs>
+              <rect width="560" height="380" fill="url(#cg)"/>
+
+              <!-- Ground line -->
+              <line x1="0" y1="175" x2="560" y2="175" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.2" stroke-dasharray="6,4"/>
+              <text x="8" y="171" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.4" letter-spacing="1">GRADE</text>
+
+              <!-- Earth fill above -->
+              <rect x="0" y="0" width="560" height="175" fill="url(#ch)"/>
+
+              <!-- L1 — Habitation (upper underground level) -->
+              <rect x="30" y="185" width="500" height="75" fill="none" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.9"/>
+
+              <!-- L1 internal divisions -->
+              <line x1="115" y1="185" x2="115" y2="260" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+              <line x1="215" y1="185" x2="215" y2="260" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+              <line x1="330" y1="185" x2="330" y2="260" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+              <line x1="430" y1="185" x2="430" y2="260" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+              <line x1="115" y1="222" x2="215" y2="222" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.5"/>
+
+              <!-- L1 Labels -->
+              <text x="72" y="225" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">DECON</text>
+              <text x="165" y="211" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">SLEEP A</text>
+              <text x="165" y="240" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">SLEEP B</text>
+              <text x="272" y="225" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">COMMON / LIVING</text>
+              <text x="380" y="225" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">KITCHEN / MED</text>
+              <text x="480" y="225" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">COMMS</text>
+
+              <!-- Blast door L1 -->
+              <rect x="26" y="205" width="5" height="30" fill="#C4962A" fill-opacity="0.8"/>
+              <path d="M31,205 Q51,220 31,235" fill="none" stroke="#C4962A" stroke-width="1" stroke-opacity="0.6"/>
+
+              <!-- L2 — Systems (lower underground level) -->
+              <rect x="30" y="278" width="500" height="70" fill="none" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.9"/>
+
+              <!-- L2 internal divisions -->
+              <line x1="155" y1="278" x2="155" y2="348" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+              <line x1="300" y1="278" x2="300" y2="348" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+              <line x1="420" y1="278" x2="420" y2="348" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+
+              <!-- L2 Labels -->
+              <text x="92" y="316" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">WATER / AIR</text>
+              <text x="227" y="316" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">POWER SYSTEMS</text>
+              <text x="360" y="316" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">FOOD / STORES</text>
+              <text x="470" y="316" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">WORKSHOP</text>
+
+              <!-- Internal stair between levels -->
+              <rect x="450" y="258" width="30" height="22" fill="url(#cg)" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.7"/>
+              <line x1="453" y1="262" x2="477" y2="262" stroke="#C4962A" stroke-width="0.4" stroke-opacity="0.6"/>
+              <line x1="453" y1="267" x2="477" y2="267" stroke="#C4962A" stroke-width="0.4" stroke-opacity="0.6"/>
+              <line x1="453" y1="272" x2="477" y2="272" stroke="#C4962A" stroke-width="0.4" stroke-opacity="0.6"/>
+              <text x="465" y="257" text-anchor="middle" font-family="monospace" font-size="5" fill="#C4962A" fill-opacity="0.7">STAIR</text>
+
+              <!-- Level labels -->
+              <text x="8" y="228" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.5" writing-mode="tb">L1</text>
+              <text x="8" y="318" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.5" writing-mode="tb">L2</text>
+
+              <!-- Dimension annotations -->
+              <line x1="30" y1="360" x2="530" y2="360" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.4"/>
+              <line x1="30" y1="355" x2="30" y2="365" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.4"/>
+              <line x1="530" y1="355" x2="530" y2="365" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.4"/>
+              <text x="280" y="373" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#C4962A" fill-opacity="0.75" letter-spacing="1">18 000mm</text>
+
+              <line x1="545" y1="185" x2="545" y2="348" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.4"/>
+              <line x1="540" y1="185" x2="550" y2="185" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.4"/>
+              <line x1="540" y1="348" x2="550" y2="348" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.4"/>
+              <text x="555" y="275" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.7" writing-mode="tb">12 000</text>
+
+              <!-- Plan number -->
+              <text x="8" y="18" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.6" letter-spacing="1">03 — THE CITADEL</text>
+              <text x="8" y="30" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.4" letter-spacing="0.5">SECTION VIEW — NOT TO SCALE</text>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SCHEMATICS — FLOOR PLANS
+  ═══════════════════════════════════════════ -->
+  <section id="schematics" class="relative py-24 texture-grid" style="background:#141412;">
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+      <div class="mb-14 fade-up">
+        <p class="eyebrow mb-3">Engineering Schematics</p>
+        <h2 class="h-display text-4xl md:text-5xl text-bunker-text">FLOOR PLANS &amp;<br>SCHEMATICS</h2>
+        <p class="text-bunker-muted text-sm mt-4 max-w-xl" style="line-height:1.8;">Representative floor plans. Engineering drawings delivered with your license include dimensioned CAD files, structural notes, and materials schedules. Layouts are adaptable to site conditions via your included consultation.</p>
+      </div>
+
+      <!-- L1 Floor Plan -->
+      <div class="mb-10 fade-up">
+        <div class="schematic-panel">
+          <p class="schematic-label">Level 1 — Habitation · 12m × 9m · 108m²</p>
+          <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+            <defs>
+              <pattern id="l1g" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0v20" fill="none" stroke="#C4962A" stroke-width="0.3" stroke-opacity="0.12"/>
+              </pattern>
+            </defs>
+            <rect width="800" height="340" fill="url(#l1g)"/>
+
+            <!-- Outer walls — thick -->
+            <rect x="40" y="30" width="720" height="290" fill="none" stroke="#C4962A" stroke-width="3" stroke-opacity="0.9"/>
+
+            <!-- Wall divisions -->
+            <!-- Decon anteroom (left) -->
+            <line x1="145" y1="30" x2="145" y2="320" stroke="#C4962A" stroke-width="2" stroke-opacity="0.85"/>
+            <!-- Sleeping block divider (vertical) -->
+            <line x1="350" y1="30" x2="350" y2="175" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <!-- Sleeping 4-way split (horizontal) -->
+            <line x1="145" y1="175" x2="350" y2="175" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <!-- Common/Kitchen divider -->
+            <line x1="560" y1="30" x2="560" y2="175" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <!-- Comms/Medical divider -->
+            <line x1="560" y1="175" x2="760" y2="175" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <!-- Medical/Kitchen lower -->
+            <line x1="350" y1="175" x2="560" y2="175" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <!-- Kitchen divider -->
+            <line x1="350" y1="248" x2="560" y2="248" stroke="#C4962A" stroke-width="1" stroke-opacity="0.65"/>
+            <!-- Decon internal -->
+            <line x1="40" y1="175" x2="145" y2="175" stroke="#C4962A" stroke-width="1" stroke-opacity="0.65"/>
+            <!-- Shower/WC in decon -->
+            <line x1="92" y1="175" x2="92" y2="320" stroke="#C4962A" stroke-width="1" stroke-opacity="0.55"/>
+
+            <!-- Room labels -->
+            <text x="92" y="108" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="1">DECON</text>
+            <text x="92" y="122" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.6">ANTEROOM</text>
+            <text x="67" y="255" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#C4962A" fill-opacity="0.8">ABLUTIONS</text>
+            <text x="117" y="255" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#C4962A" fill-opacity="0.8">SHOWER</text>
+
+            <text x="247" y="105" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">SLEEPING 01</text>
+            <text x="247" y="247" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">SLEEPING 02</text>
+
+            <text x="455" y="108" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">COMMON AREA</text>
+            <text x="455" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">LIVING / DINING</text>
+            <text x="455" y="213" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">KITCHEN</text>
+            <text x="455" y="285" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#C4962A" fill-opacity="0.7">PREP / STORAGE</text>
+
+            <text x="660" y="108" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">COMMUNICATIONS</text>
+            <text x="660" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">SECURE CORE</text>
+            <text x="660" y="255" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">MEDICAL</text>
+            <text x="660" y="269" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">ROUGH-IN PROVISION</text>
+
+            <!-- Blast door entry (left wall) -->
+            <rect x="37" y="100" width="6" height="55" fill="#C4962A" fill-opacity="0.85"/>
+            <path d="M43,100 Q70,127 43,155" fill="none" stroke="#C4962A" stroke-width="1.2" stroke-opacity="0.7"/>
+            <text x="30" y="97" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.65" letter-spacing="0.5">BLAST</text>
+            <text x="30" y="105" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.65" letter-spacing="0.5">DOOR</text>
+
+            <!-- Internal door — decon to main -->
+            <rect x="143" y="85" width="4" height="40" fill="#C4962A" fill-opacity="0.5"/>
+            <path d="M147,85 Q167,105 147,125" fill="none" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.5"/>
+
+            <!-- Stairwell to L2 (right side) -->
+            <rect x="680" y="288" width="78" height="30" fill="none" stroke="#C4962A" stroke-width="1" stroke-opacity="0.7"/>
+            <line x1="685" y1="293" x2="755" y2="293" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.6"/>
+            <line x1="685" y1="299" x2="755" y2="299" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.6"/>
+            <line x1="685" y1="305" x2="755" y2="305" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.6"/>
+            <line x1="685" y1="311" x2="755" y2="311" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.6"/>
+            <text x="719" y="285" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.7">STAIR TO L2</text>
+
+            <!-- Dimension lines -->
+            <line x1="40" y1="8" x2="760" y2="8" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.35"/>
+            <line x1="40" y1="4" x2="40" y2="12" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.35"/>
+            <line x1="760" y1="4" x2="760" y2="12" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.35"/>
+            <text x="400" y="5" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.5" letter-spacing="1">18 000</text>
+
+            <line x1="780" y1="30" x2="780" y2="175" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.35"/>
+            <line x1="776" y1="30" x2="784" y2="30" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.35"/>
+            <line x1="776" y1="175" x2="784" y2="175" stroke="#C4962A" stroke-width="0.6" stroke-opacity="0.35"/>
+            <text x="793" y="108" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.5" writing-mode="tb">6 000</text>
+
+            <!-- Scale note -->
+            <text x="44" y="335" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.4" letter-spacing="0.8">LEVEL 1 — HABITATION — SCHEMATIC ONLY — NOT TO SCALE</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- L2 Floor Plan -->
+      <div class="mb-10 fade-up">
+        <div class="schematic-panel">
+          <p class="schematic-label">Level 2 — Systems · 12m × 9m · 108m²</p>
+          <svg viewBox="0 0 800 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+            <defs>
+              <pattern id="l2g" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0v20" fill="none" stroke="#C4962A" stroke-width="0.3" stroke-opacity="0.12"/>
+              </pattern>
+            </defs>
+            <rect width="800" height="290" fill="url(#l2g)"/>
+
+            <!-- Outer walls -->
+            <rect x="40" y="20" width="720" height="240" fill="none" stroke="#C4962A" stroke-width="3" stroke-opacity="0.9"/>
+
+            <!-- Internal walls -->
+            <line x1="210" y1="20" x2="210" y2="260" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <line x1="400" y1="20" x2="400" y2="260" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <line x1="560" y1="20" x2="560" y2="260" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.8"/>
+            <line x1="40" y1="140" x2="210" y2="140" stroke="#C4962A" stroke-width="1" stroke-opacity="0.65"/>
+            <line x1="400" y1="140" x2="560" y2="140" stroke="#C4962A" stroke-width="1" stroke-opacity="0.65"/>
+
+            <!-- Room labels -->
+            <text x="125" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">WATER</text>
+            <text x="125" y="95" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">STORAGE / TREATMENT</text>
+            <text x="125" y="195" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">AIR HANDLING</text>
+            <text x="125" y="208" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">NBC FILTRATION</text>
+
+            <text x="305" y="140" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">POWER SYSTEMS</text>
+            <text x="305" y="155" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">SOLAR / BATTERY / DIESEL</text>
+
+            <text x="480" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">FOOD STORAGE</text>
+            <text x="480" y="95" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">LONG-TERM PROVISION</text>
+            <text x="480" y="195" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">WORKSHOP</text>
+            <text x="480" y="208" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">MAINTENANCE / STORES</text>
+
+            <text x="660" y="140" text-anchor="middle" font-family="monospace" font-size="9" fill="#C4962A" fill-opacity="0.9" letter-spacing="0.8">SECURE CORE</text>
+            <text x="660" y="155" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.6">BLAST-RATED VAULT</text>
+
+            <!-- Stairwell -->
+            <rect x="41" y="21" width="60" height="50" fill="none" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.6"/>
+            <line x1="46" y1="27" x2="96" y2="27" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.5"/>
+            <line x1="46" y1="33" x2="96" y2="33" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.5"/>
+            <line x1="46" y1="39" x2="96" y2="39" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.5"/>
+            <line x1="46" y1="45" x2="96" y2="45" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.5"/>
+            <line x1="46" y1="51" x2="96" y2="51" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.5"/>
+            <line x1="46" y1="57" x2="96" y2="57" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.5"/>
+            <text x="71" y="18" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#C4962A" fill-opacity="0.6">STAIR FROM L1</text>
+
+            <!-- Scale note -->
+            <text x="44" y="278" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.4" letter-spacing="0.8">LEVEL 2 — SYSTEMS — SCHEMATIC ONLY — NOT TO SCALE</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Cross Section -->
+      <div class="fade-up">
+        <div class="schematic-panel">
+          <p class="schematic-label">Cross-Section View — A–A</p>
+          <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+            <defs>
+              <pattern id="xcg" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0v20" fill="none" stroke="#C4962A" stroke-width="0.3" stroke-opacity="0.1"/>
+              </pattern>
+              <pattern id="xeh" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="8" stroke="#C4962A" stroke-width="1.2" stroke-opacity="0.07"/>
+              </pattern>
+            </defs>
+            <rect width="800" height="280" fill="url(#xcg)"/>
+
+            <!-- Grade line -->
+            <line x1="0" y1="80" x2="800" y2="80" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="8,5"/>
+            <text x="10" y="76" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.45" letter-spacing="1">FINISHED GRADE</text>
+
+            <!-- Earth fill -->
+            <rect x="0" y="0" width="800" height="80" fill="url(#xeh)"/>
+
+            <!-- Access shaft / entry corridor -->
+            <rect x="60" y="20" width="45" height="60" fill="none" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.85"/>
+            <text x="82" y="56" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.8" writing-mode="tb">ENTRY</text>
+
+            <!-- L1 Box -->
+            <rect x="110" y="88" width="580" height="70" fill="none" stroke="#C4962A" stroke-width="2.5" stroke-opacity="0.9"/>
+            <!-- L1 inner divisions -->
+            <line x1="175" y1="88" x2="175" y2="158" stroke="#C4962A" stroke-width="1" stroke-opacity="0.6"/>
+            <line x1="360" y1="88" x2="360" y2="158" stroke="#C4962A" stroke-width="1" stroke-opacity="0.6"/>
+            <line x1="550" y1="88" x2="550" y2="158" stroke="#C4962A" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="142" y="127" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">DECON</text>
+            <text x="267" y="127" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">HABITATION</text>
+            <text x="455" y="127" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">LIVING / COMMS</text>
+            <text x="625" y="127" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">SECURE CORE</text>
+
+            <!-- L1 height annotation -->
+            <line x1="700" y1="88" x2="700" y2="158" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <line x1="696" y1="88" x2="704" y2="88" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <line x1="696" y1="158" x2="704" y2="158" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <text x="715" y="127" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.5">2.7m</text>
+
+            <!-- Concrete slab between levels -->
+            <rect x="110" y="158" width="580" height="12" fill="#2A2A26" stroke="#C4962A" stroke-width="0.8" stroke-opacity="0.5"/>
+            <text x="400" y="167" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#C4962A" fill-opacity="0.5" letter-spacing="0.8">REINFORCED CONCRETE SLAB</text>
+
+            <!-- L2 Box -->
+            <rect x="110" y="170" width="580" height="70" fill="none" stroke="#C4962A" stroke-width="2.5" stroke-opacity="0.9"/>
+            <line x1="300" y1="170" x2="300" y2="240" stroke="#C4962A" stroke-width="1" stroke-opacity="0.6"/>
+            <line x1="500" y1="170" x2="500" y2="240" stroke="#C4962A" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="205" y="209" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">WATER / AIR</text>
+            <text x="400" y="209" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">POWER SYSTEMS</text>
+            <text x="590" y="209" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.85">STORES / WORKSHOP</text>
+
+            <!-- L2 height annotation -->
+            <line x1="700" y1="170" x2="700" y2="240" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <line x1="696" y1="170" x2="704" y2="170" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <line x1="696" y1="240" x2="704" y2="240" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <text x="715" y="209" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.5">2.4m</text>
+
+            <!-- Foundation annotation -->
+            <rect x="108" y="240" width="584" height="8" fill="#1C1C19" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.4"/>
+            <text x="400" y="263" text-anchor="middle" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.4" letter-spacing="0.8">REINFORCED CONCRETE FOUNDATION SLAB</text>
+
+            <!-- Total depth annotation -->
+            <line x1="50" y1="80" x2="50" y2="248" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <line x1="46" y1="80" x2="54" y2="80" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <line x1="46" y1="248" x2="54" y2="248" stroke="#C4962A" stroke-width="0.5" stroke-opacity="0.35"/>
+            <text x="36" y="170" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.5" writing-mode="tb">5.4m DEPTH</text>
+
+            <text x="10" y="275" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.35" letter-spacing="0.8">CROSS SECTION A–A — SCHEMATIC ONLY — NOT TO SCALE</text>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SPECIFICATIONS
+  ═══════════════════════════════════════════ -->
+  <section class="relative py-24 texture-noise" style="background:#0D0D0B;">
+    <div class="relative z-10 max-w-6xl mx-auto px-6">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+        <!-- Left: Full spec table -->
+        <div class="fade-up">
+          <p class="eyebrow mb-4">Technical Specifications</p>
+          <h2 class="h-display text-4xl md:text-5xl text-bunker-text mb-8">FULL<br>SPECIFICATION</h2>
+
+          <div style="border-top:1px solid #2A2A26;">
+            <div class="spec-row">
+              <span class="spec-key">Plan No.</span>
+              <span class="spec-val">03 — The Citadel</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Classification</span>
+              <span class="spec-val">Extended-Stay Underground Bunker</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Total Area</span>
+              <span class="spec-val">216m² (2 × 108m² levels)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Footprint</span>
+              <span class="spec-val">18m × 12m</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Levels</span>
+              <span class="spec-val">2 underground (L1 Habitation, L2 Systems)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Excavation Depth</span>
+              <span class="spec-val">Approx. 5.4m below finished grade</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Capacity</span>
+              <span class="spec-val">10–20 persons (8 private berths)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Autonomy</span>
+              <span class="spec-val">12 months, fully self-sufficient</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Shell</span>
+              <span class="spec-val">Steel-reinforced blast-rated concrete, 300mm walls</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Entry</span>
+              <span class="spec-val">Blast-rated steel door + decontamination anteroom</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Air System</span>
+              <span class="spec-val">Full NBC (nuclear/biological/chemical) filtration, positive pressure, multi-zone</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Power</span>
+              <span class="spec-val">Independent microgrid — solar array, lithium battery bank, diesel generator backup</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Water</span>
+              <span class="spec-val">10,000L storage + filtration + rainwater capture provision</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Communications</span>
+              <span class="spec-val">Hardened comms conduit, antenna provisions, faraday shielding rough-in</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Medical</span>
+              <span class="spec-val">Dedicated medical room, rough-in for surgical lighting + O² provision</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Secure Core</span>
+              <span class="spec-val">Blast-rated armored vault room within L2</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Certification</span>
+              <span class="spec-val">NZ CPEng-stamped engineering drawings; adaptable to local codes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: What's included + CTA -->
+        <div class="fade-up" data-delay="2">
+
+          <!-- What's included -->
+          <p class="eyebrow mb-4">License Package</p>
+          <h2 class="h-display text-4xl md:text-5xl text-bunker-text mb-8">WHAT'S<br>INCLUDED</h2>
+
+          <div style="border-top:1px solid #2A2A26;margin-bottom:2.5rem;">
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Full dimensioned floor plans</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">CAD-ready drawings, all levels, with room dimensions and structural notes</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Structural engineering drawings</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">CPEng-stamped, with foundation, wall, and roof specifications</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Full materials schedule</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">Complete bill of quantities for contractor tendering and procurement</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">MEP schematics</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">Mechanical, electrical, and plumbing schematic layouts</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">1-hour site adaptation consultation</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">Direct session with our lead engineer to adapt to your soil, climate, and site</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Worldwide build license</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">License to construct one structure anywhere in the world with your chosen contractor</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <div class="include-check">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4L3 6L7 2" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">NDA-protected delivery</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">All documents delivered under standard NDA. Your plans are private.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enquiry CTA -->
+          <div style="background:#141412;border:1px solid rgba(196,150,42,0.35);padding:2rem;">
+            <p class="eyebrow mb-2">Pricing</p>
+            <p class="font-serif italic text-bunker-muted mb-4" style="line-height:1.6;">Pricing is provided upon enquiry. Every engagement begins with a private conversation to understand your requirements, timeline, and site.</p>
+            <a href="../contact.html?plan=citadel" class="btn-brass w-full justify-center mb-3" style="font-size:0.9rem;">Request Pricing &amp; License</a>
+            <p class="text-center text-bunker-muted" style="font-size:0.7rem;letter-spacing:0.03em;">All enquiries held under NDA. Response within 48 hours.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BUILD NOTES
+  ═══════════════════════════════════════════ -->
+  <section class="relative py-20 texture-grid" style="background:#141412;">
+    <div class="relative z-10 max-w-6xl mx-auto px-6">
+
+      <div class="mb-12 fade-up">
+        <p class="eyebrow mb-3">Construction Notes</p>
+        <h2 class="h-display text-4xl md:text-5xl text-bunker-text">BUILD<br>ANYWHERE</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="card p-7 fade-up" data-delay="1">
+          <div class="mb-5" style="width:32px;height:2px;background:#C4962A;"></div>
+          <h3 class="font-serif text-xl text-bunker-text mb-3">Your Contractor</h3>
+          <p class="text-bunker-muted text-sm" style="line-height:1.8;">License the plans and take them to any qualified contractor worldwide. The drawings are designed to be contractor-readable and code-adaptable. Your engineer consultation helps translate specifications to local standards.</p>
+        </div>
+
+        <div class="card p-7 fade-up" data-delay="2">
+          <div class="mb-5" style="width:32px;height:2px;background:#C4962A;"></div>
+          <h3 class="font-serif text-xl text-bunker-text mb-3">Our NZ Build Team</h3>
+          <p class="text-bunker-muted text-sm" style="line-height:1.8;">Prefer to build in New Zealand? Our in-house crew has completed 34 structures across the country. We manage the full build on your NZ property — from excavation to commissioning. Enquire separately for build pricing.</p>
+        </div>
+
+        <div class="card p-7 fade-up" data-delay="3">
+          <div class="mb-5" style="width:32px;height:2px;background:#C4962A;"></div>
+          <h3 class="font-serif text-xl text-bunker-text mb-3">Site Requirements</h3>
+          <p class="text-bunker-muted text-sm" style="line-height:1.8;">The Citadel requires a minimum 400m² site clearance and stable ground capable of supporting excavation to 6m. Site-specific soil testing is recommended. Your included consultation covers site assessment methodology.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════ -->
+  <section class="relative py-24 texture-noise" style="background:#0D0D0B;">
+    <div class="relative z-10 max-w-3xl mx-auto px-6">
+
+      <div class="mb-14 text-center fade-up">
+        <p class="eyebrow mb-3">Common Questions</p>
+        <h2 class="h-display text-4xl md:text-5xl text-bunker-text">FREQUENTLY<br>ASKED</h2>
+      </div>
+
+      <div style="border-top:1px solid #2A2A26;">
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            Can I use any builder, or does it have to be a New Zealand contractor?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke="#C4962A" stroke-width="1.2"/><line x1="1" y1="5" x2="9" y2="5" stroke="#C4962A" stroke-width="1.2"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Any qualified contractor worldwide. The license is not restricted by geography. The engineering drawings are designed to be adaptable — your included 1-hour consultation with our lead engineer helps you translate the specifications to your local building code and site conditions. We've had Citadel builds completed by contractors in the US, Australia, the UK, and across Europe.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            What does "worldwide build license" mean in practice?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke="#C4962A" stroke-width="1.2"/><line x1="1" y1="5" x2="9" y2="5" stroke="#C4962A" stroke-width="1.2"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              You receive the right to construct one structure based on The Citadel design, anywhere in the world, once. The plans are yours to use with your chosen contractor. They are not transferable to a third party and may not be used for a second build without an additional license. Additional build licenses can be purchased at a reduced rate.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            How much customization is possible within the plan?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke="#C4962A" stroke-width="1.2"/><line x1="1" y1="5" x2="9" y2="5" stroke="#C4962A" stroke-width="1.2"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Moderate customization is achievable within the licensed plan — interior room configurations, finish specifications, and MEP equipment selection are all yours to specify. Structural changes (moving load-bearing walls, changing the footprint) require a separate bespoke commission. Your consultation covers what's possible within the plan without triggering a re-engineer.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            What are the NBC filtration provisions?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke="#C4962A" stroke-width="1.2"/><line x1="1" y1="5" x2="9" y2="5" stroke="#C4962A" stroke-width="1.2"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              The Citadel includes a designed positive-pressure air handling system with HEPA + activated carbon filtration, an overpressure system to prevent external air infiltration, and a dedicated decontamination anteroom with blast door on entry. Specific equipment (filtration units, blowers, sensors) is not supplied — the drawings specify performance requirements and spatial provisions. Your contractor sources to spec.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            How long does the build typically take?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke="#C4962A" stroke-width="1.2"/><line x1="1" y1="5" x2="9" y2="5" stroke="#C4962A" stroke-width="1.2"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Build duration depends heavily on contractor, site, and access. For reference, our New Zealand builds of The Citadel have ranged from 14 to 22 months from ground-breaking to commissioning. Major variables are excavation and concrete work. MEP installation and fit-out follow the shell and typically add 4–6 months.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            Is the purchase confidential?
+            <span class="faq-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke="#C4962A" stroke-width="1.2"/><line x1="1" y1="5" x2="9" y2="5" stroke="#C4962A" stroke-width="1.2"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Completely. Every engagement is covered by our standard NDA from first contact. We do not publish client names, locations, or project details. Payment can be structured through legal entities or trusts at your discretion. We have worked with principals who require the strictest operational security and can accommodate any privacy requirement.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CTA STRIP
+  ═══════════════════════════════════════════ -->
+  <section class="relative py-20 texture-grid texture-noise overflow-hidden" style="background:#C4962A;">
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(217,174,74,0.4) 0%, transparent 60%); z-index:1;"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-center fade-up">
+      <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(13,13,11,0.55);margin-bottom:1rem;">Ready to Proceed</p>
+      <h2 class="h-display text-bunker-black mb-6" style="font-size:clamp(48px,8vw,90px);">LICENSE THE CITADEL</h2>
+      <p style="font-family:'DM Serif Display',serif;font-style:italic;color:rgba(13,13,11,0.65);font-size:1.1rem;margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.6;">Every engagement begins with a private conversation. Pricing, timeline, and full documentation provided upon enquiry.</p>
+      <a href="../contact.html?plan=citadel" class="btn-ghost" style="border-color:rgba(13,13,11,0.35);color:#0D0D0B;font-size:1rem;padding:1rem 2.5rem;">
+        Begin Enquiry
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       OTHER PLANS
+  ═══════════════════════════════════════════ -->
+  <section class="relative py-24 texture-grid" style="background:#141412;">
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+      <div class="mb-12 fade-up">
+        <p class="eyebrow mb-3">Browse All Plans</p>
+        <h2 class="h-display text-4xl text-bunker-text">OTHER PLANS</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Sentinel -->
+        <a href="the-sentinel.html" class="card block" style="text-decoration:none;">
+          <div class="plan-thumb">
+            <svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg" style="width:88%;opacity:0.9;">
+              <defs>
+                <pattern id="op1" width="15" height="15" patternUnits="userSpaceOnUse">
+                  <path d="M15 0H0v15" fill="none" stroke="#C4962A" stroke-width="0.25" stroke-opacity="0.2"/>
+                </pattern>
+              </defs>
+              <rect width="360" height="130" fill="url(#op1)"/>
+              <rect x="60" y="20" width="240" height="90" fill="none" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.85"/>
+              <line x1="160" y1="20" x2="160" y2="110" stroke="#C4962A" stroke-width="0.9" stroke-opacity="0.6"/>
+              <text x="110" y="69" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">MAIN</text>
+              <text x="245" y="69" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.85" letter-spacing="0.8">SYSTEMS</text>
+              <text x="340" y="12" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.7">01</text>
+              <text x="180" y="124" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.7">24m²</text>
+            </svg>
+          </div>
+          <div class="p-5">
+            <p class="eyebrow text-xs mb-1">Plan 01</p>
+            <h3 class="font-serif text-xl text-bunker-text mb-1">The Sentinel</h3>
+            <p class="text-bunker-muted text-sm">Solo / Couple · 24m²</p>
+          </div>
+        </a>
+
+        <!-- Redoubt -->
+        <a href="the-redoubt.html" class="card block" style="text-decoration:none;">
+          <div class="plan-thumb">
+            <svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg" style="width:88%;opacity:0.9;">
+              <defs>
+                <pattern id="op2" width="15" height="15" patternUnits="userSpaceOnUse">
+                  <path d="M15 0H0v15" fill="none" stroke="#C4962A" stroke-width="0.25" stroke-opacity="0.2"/>
+                </pattern>
+              </defs>
+              <rect width="360" height="130" fill="url(#op2)"/>
+              <rect x="20" y="15" width="320" height="100" fill="none" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.85"/>
+              <line x1="140" y1="15" x2="140" y2="115" stroke="#C4962A" stroke-width="0.9" stroke-opacity="0.65"/>
+              <line x1="240" y1="15" x2="240" y2="115" stroke="#C4962A" stroke-width="0.9" stroke-opacity="0.65"/>
+              <line x1="20" y1="65" x2="140" y2="65" stroke="#C4962A" stroke-width="0.7" stroke-opacity="0.5"/>
+              <text x="80" y="47" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.85">SLEEP</text>
+              <text x="80" y="94" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.85">UTILITY</text>
+              <text x="190" y="69" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.85">LIVING</text>
+              <text x="295" y="69" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.85">DECON</text>
+              <text x="340" y="12" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.7">02</text>
+              <text x="180" y="124" text-anchor="middle" font-family="monospace" font-size="7" fill="#C4962A" fill-opacity="0.7">96m² · 12m × 8m</text>
+            </svg>
+          </div>
+          <div class="p-5">
+            <p class="eyebrow text-xs mb-1">Plan 02</p>
+            <h3 class="font-serif text-xl text-bunker-text mb-1">The Redoubt</h3>
+            <p class="text-bunker-muted text-sm">Family Bunker · 96m²</p>
+          </div>
+        </a>
+
+        <!-- Sovereign -->
+        <a href="the-sovereign.html" class="card block" style="text-decoration:none;">
+          <div class="plan-thumb">
+            <svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg" style="width:88%;opacity:0.9;">
+              <defs>
+                <pattern id="op3" width="15" height="15" patternUnits="userSpaceOnUse">
+                  <path d="M15 0H0v15" fill="none" stroke="#C4962A" stroke-width="0.25" stroke-opacity="0.2"/>
+                </pattern>
+              </defs>
+              <rect width="360" height="130" fill="url(#op3)"/>
+              <rect x="10" y="12" width="70" height="50" fill="none" stroke="#C4962A" stroke-width="1.2" stroke-opacity="0.75"/>
+              <rect x="120" y="12" width="80" height="50" fill="none" stroke="#C4962A" stroke-width="1.2" stroke-opacity="0.75"/>
+              <rect x="250" y="12" width="100" height="50" fill="none" stroke="#C4962A" stroke-width="1.2" stroke-opacity="0.75"/>
+              <rect x="80" y="28" width="40" height="18" fill="none" stroke="#C4962A" stroke-width="0.7" stroke-opacity="0.55"/>
+              <rect x="200" y="28" width="50" height="18" fill="none" stroke="#C4962A" stroke-width="0.7" stroke-opacity="0.55"/>
+              <rect x="50" y="75" width="260" height="45" fill="none" stroke="#C4962A" stroke-width="1.5" stroke-opacity="0.85"/>
+              <line x1="180" y1="75" x2="180" y2="120" stroke="#C4962A" stroke-width="0.7" stroke-opacity="0.55"/>
+              <text x="115" y="100" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.8">SYSTEMS / AGRI</text>
+              <text x="245" y="100" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.8">SECURE CORE</text>
+              <text x="340" y="9" font-family="monospace" font-size="6" fill="#C4962A" fill-opacity="0.75">04</text>
+              <text x="180" y="128" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#C4962A" fill-opacity="0.75">500m²+ · MODULAR</text>
+            </svg>
+          </div>
+          <div class="p-5">
+            <p class="eyebrow text-xs mb-1">Plan 04</p>
+            <h3 class="font-serif text-xl text-bunker-text mb-1">The Sovereign</h3>
+            <p class="text-bunker-muted text-sm">Survival Estate · 500m²+</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-bunker-surface border-t border-bunker-border py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+
+        <div>
+          <p class="font-display text-bunker-brass text-xl tracking-widest mb-3" style="letter-spacing:0.1em;">
+            SAFEROOM <span style="color:#C4962A;">&amp;</span> BUNKER CO.
+          </p>
+          <p class="font-serif italic text-bunker-muted text-sm mb-4">Built Below. Built to Last.</p>
+          <p class="text-bunker-muted text-xs" style="line-height:1.8;">
+            New Zealand's leading designer and licensor of engineer-certified underground bunker and saferoom plans. Serving principals worldwide since 2020.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-display text-bunker-brass text-sm tracking-widest mb-5" style="letter-spacing:0.2em;">PLANS</p>
+          <nav>
+            <ul class="space-y-3">
+              <li><a href="the-sentinel.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Sentinel — 24m²</a></li>
+              <li><a href="the-redoubt.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Redoubt — 96m²</a></li>
+              <li><a href="the-citadel.html" class="text-bunker-brass text-sm" style="text-decoration:none;">The Citadel — 216m²</a></li>
+              <li><a href="the-sovereign.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Sovereign — 500m²+</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <p class="font-display text-bunker-brass text-sm tracking-widest mb-5" style="letter-spacing:0.2em;">CONTACT</p>
+          <address class="not-italic space-y-3">
+            <p class="text-bunker-muted text-sm">Auckland, New Zealand</p>
+            <p><a href="mailto:plans@saferoombunker.com" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">plans@saferoombunker.com</a></p>
+            <p><a href="tel:+64220916407" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">+64 22 091 6407</a></p>
+            <p class="text-bunker-muted text-xs italic mt-4" style="line-height:1.7;">All initial contact held under strict confidence.</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="border-t border-bunker-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="text-bunker-muted text-xs" style="letter-spacing:0.03em;">© 2026 Saferoom &amp; Bunker Co. Ltd. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="../privacy.html" class="text-bunker-muted text-xs hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;letter-spacing:0.05em;">Privacy Policy</a>
+          <a href="../terms.html" class="text-bunker-muted text-xs hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;letter-spacing:0.05em;">Terms of Engagement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════════ -->
+  <script>
+    // ── Nav scroll state ──
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Mobile nav toggle ──
+    const toggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const ham1 = document.getElementById('ham1');
+    const ham2 = document.getElementById('ham2');
+    const ham3 = document.getElementById('ham3');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        ham1.style.transform = isOpen ? 'translateY(7px) rotate(45deg)' : '';
+        ham2.style.opacity = isOpen ? '0' : '1';
+        ham3.style.transform = isOpen ? 'translateY(-5px) rotate(-45deg)' : '';
+        ham3.style.width = isOpen ? '20px' : '12px';
+      });
+    }
+
+    // ── IntersectionObserver fade-up ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ── FAQ accordion ──
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', (!isOpen).toString());
+      });
+    });
+
+    // ── Smooth scroll for anchor links ──
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>

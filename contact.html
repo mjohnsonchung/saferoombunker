@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Saferoom &amp; Bunker Co. | Enquire About Bunker Plans</title>
+  <meta name="description" content="Begin a private enquiry with Saferoom & Bunker Co. All initial contact is covered by our standard NDA. Plan licensing, build enquiries, and bespoke commissions.">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="US">
+  <link rel="canonical" href="https://saferoombunker.com/contact">
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bunker: {
+              black:'#0D0D0B', surface:'#141412', panel:'#1C1C19',
+              brass:'#C4962A', 'brass-light':'#D9AE4A', 'brass-dark':'#A37B1E',
+              text:'#E8E4DC', muted:'#5C5A54', border:'#2A2A26',
+            }
+          },
+          fontFamily: {
+            display:['"Bebas Neue"','sans-serif'],
+            serif:['"DM Serif Display"','serif'],
+            sans:['"DM Sans"','sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{background:#0D0D0B;color:#E8E4DC;font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.75;-webkit-font-smoothing:antialiased}
+    .texture-grid::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0H0v40' fill='none' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+    .texture-noise::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:0;mix-blend-mode:overlay}
+    .fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.75s cubic-bezier(0.16,1,0.3,1),transform 0.75s cubic-bezier(0.16,1,0.3,1)}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+    [data-delay="1"]{transition-delay:0.08s}[data-delay="2"]{transition-delay:0.16s}[data-delay="3"]{transition-delay:0.24s}[data-delay="4"]{transition-delay:0.32s}
+    .btn-brass{display:inline-flex;align-items:center;gap:0.5rem;background:#C4962A;color:#0D0D0B;font-family:'Bebas Neue',sans-serif;letter-spacing:0.12em;font-size:0.9rem;padding:0.85rem 2rem;border:1px solid #C4962A;cursor:pointer;transition:background 0.2s cubic-bezier(0.16,1,0.3,1),box-shadow 0.2s cubic-bezier(0.16,1,0.3,1),transform 0.15s cubic-bezier(0.16,1,0.3,1);text-decoration:none}
+    .btn-brass:hover{background:#D9AE4A;box-shadow:0 0 0 1px rgba(196,150,42,0.6),0 0 28px rgba(196,150,42,0.2);transform:translateY(-1px)}
+    .btn-brass:active{transform:translateY(0);background:#A37B1E}
+    #nav{background:rgba(20,20,18,0.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid #2A2A26;transition:border-color 0.3s ease}
+    #nav.nav-scrolled{border-bottom-color:rgba(196,150,42,0.2)}
+    .nav-link{color:#5C5A54;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.2s ease}
+    .nav-link:hover{color:#C4962A}
+    .eyebrow{font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:#C4962A}
+    .h-display{font-family:'Bebas Neue',sans-serif;letter-spacing:-0.02em;line-height:0.92}
+    #mobile-menu{display:none;background:#141412;border-top:1px solid #2A2A26;padding:1.5rem 1.5rem 2rem}
+    #mobile-menu.open{display:block}
+    .mobile-link{display:block;padding:0.75rem 0;color:#5C5A54;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #2A2A26;transition:color 0.2s ease}
+    .mobile-link:hover{color:#C4962A}
+    /* Form */
+    .form-input{width:100%;background:#0D0D0B;color:#E8E4DC;border:1px solid #2A2A26;padding:0.9rem 1rem;font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.9rem;outline:none;appearance:none;transition:border-color 0.2s ease,box-shadow 0.2s ease}
+    .form-input::placeholder{color:#3A3A36}
+    .form-input:focus{border-color:#C4962A;box-shadow:0 0 0 3px rgba(196,150,42,0.12)}
+    .form-label{display:block;font-family:'Bebas Neue',sans-serif;font-size:0.75rem;letter-spacing:0.18em;color:#C4962A;margin-bottom:0.4rem}
+    select.form-input option{background:#141412}
+    /* Radio-style enquiry type */
+    .enquiry-type-btn{display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;border:1px solid #2A2A26;cursor:pointer;transition:border-color 0.2s ease,background 0.2s ease;background:#0D0D0B;width:100%;text-align:left}
+    .enquiry-type-btn:hover{border-color:rgba(196,150,42,0.35)}
+    .enquiry-type-btn.selected{border-color:#C4962A;background:#1C1C19}
+    .enquiry-type-btn .et-dot{width:12px;height:12px;border:1px solid rgba(196,150,42,0.4);flex-shrink:0;transition:background 0.2s ease,border-color 0.2s ease}
+    .enquiry-type-btn.selected .et-dot{background:#C4962A;border-color:#C4962A}
+    .enquiry-type-btn .et-label{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:#5C5A54;transition:color 0.2s ease}
+    .enquiry-type-btn.selected .et-label{color:#E8E4DC}
+    .enquiry-type-btn .et-sublabel{font-family:'DM Sans',sans-serif;font-size:0.7rem;color:#3A3A36;margin-top:0.1rem}
+    /* Trust items */
+    .trust-item{display:flex;gap:0.75rem;align-items:flex-start;padding:0.75rem 0;border-bottom:1px solid #1C1C19}
+    .trust-item:last-child{border-bottom:none}
+  </style>
+</head>
+<body class="bg-bunker-black text-bunker-text font-sans overflow-x-hidden">
+
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-display text-bunker-text tracking-widest text-lg leading-none" style="letter-spacing:0.1em;">SAFEROOM <span style="color:#C4962A;">&amp;</span> BUNKER CO.</a>
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="index.html#plans" class="nav-link">Plans</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="why-nz.html" class="nav-link">Why New Zealand</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link" style="color:#C4962A;">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="index.html#plans" class="btn-brass hidden sm:inline-flex" style="padding:0.6rem 1.4rem;font-size:0.8rem;">Browse Plans</a>
+        <button id="nav-toggle" class="lg:hidden flex flex-col gap-1.5 p-1" aria-label="Toggle menu">
+          <span class="w-5 h-px bg-bunker-muted" id="ham1"></span>
+          <span class="w-5 h-px bg-bunker-muted" id="ham2"></span>
+          <span class="w-3 h-px bg-bunker-muted" id="ham3"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html#plans" class="mobile-link">Plans</a>
+      <a href="services.html" class="mobile-link">Services</a>
+      <a href="why-nz.html" class="mobile-link">Why New Zealand</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+      <a href="index.html#plans" class="btn-brass w-full justify-center mt-4" style="font-size:0.85rem;">Browse Plans</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO + FORM -->
+  <section class="relative texture-grid texture-noise min-h-screen overflow-hidden" style="background:#0D0D0B;">
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 50% 70% at 100% 30%,rgba(196,150,42,0.06) 0%,transparent 65%),radial-gradient(ellipse 35% 50% at 0% 80%,rgba(196,150,42,0.04) 0%,transparent 55%);z-index:1;"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+        <!-- Left: Copy + Trust -->
+        <div>
+          <p class="eyebrow mb-5 fade-up">Private Enquiry</p>
+          <h1 class="h-display text-bunker-text mb-6 fade-up" data-delay="1" style="font-size:clamp(56px,8vw,96px);">BEGIN YOUR<br>ENQUIRY</h1>
+          <p class="font-serif italic text-xl text-bunker-muted mb-10 fade-up" data-delay="2" style="max-width:480px;line-height:1.65;">
+            Every engagement begins with a private conversation. Tell us what you're working towards — we'll respond within 48 hours with relevant information, under full confidentiality.
+          </p>
+
+          <!-- Brass rule -->
+          <div style="width:40px;height:2px;background:#C4962A;margin-bottom:2rem;opacity:0.7;" class="fade-up" data-delay="2"></div>
+
+          <!-- Trust items -->
+          <div style="border-top:1px solid #2A2A26;" class="fade-up" data-delay="3">
+            <div class="trust-item">
+              <div style="width:20px;height:20px;border:1px solid rgba(196,150,42,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:0.1rem;">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5L3.5 6.5L7.5 2.5" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Standard NDA from first contact</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">Your enquiry is protected before you send it. We do not disclose that you have contacted us.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div style="width:20px;height:20px;border:1px solid rgba(196,150,42,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:0.1rem;">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5L3.5 6.5L7.5 2.5" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">No third-party disclosure, ever</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">Your name, project details, and location are never shared with third parties for any reason.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div style="width:20px;height:20px;border:1px solid rgba(196,150,42,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:0.1rem;">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5L3.5 6.5L7.5 2.5" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Response within 48 business hours</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">All enquiries are reviewed personally by a member of our senior team. No automated responses.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div style="width:20px;height:20px;border:1px solid rgba(196,150,42,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:0.1rem;">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5L3.5 6.5L7.5 2.5" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">No obligation until you sign</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">An initial consultation carries no commitment. Pricing and documentation follow only if you proceed.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div style="width:20px;height:20px;border:1px solid rgba(196,150,42,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:0.1rem;">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5L3.5 6.5L7.5 2.5" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-bunker-text text-sm" style="font-weight:400;">Legal entity and trust arrangements accommodated</p>
+                <p class="text-bunker-muted text-xs" style="line-height:1.7;">Purchases can be structured through trusts, LLCs, or equivalent entities. We work with your advisers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct contact -->
+          <div class="mt-10 fade-up" data-delay="4">
+            <p class="eyebrow mb-4" style="font-size:0.6rem;">Direct Contact</p>
+            <address class="not-italic space-y-2">
+              <p><a href="mailto:plans@saferoombunker.com" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">plans@saferoombunker.com</a></p>
+              <p><a href="tel:+64220916407" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">+64 22 091 6407</a></p>
+              <p class="text-bunker-muted text-sm">Auckland &amp; Wellington, New Zealand</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="fade-up" data-delay="2">
+          <form id="enquiry-form" action="#" method="POST" style="background:#141412;border:1px solid #2A2A26;padding:2.5rem;">
+
+            <!-- Enquiry type selection -->
+            <div class="mb-6">
+              <p class="form-label" style="margin-bottom:0.75rem;">Enquiry Type</p>
+              <div class="space-y-2">
+                <button type="button" class="enquiry-type-btn selected" data-type="license" onclick="selectType(this)">
+                  <span class="et-dot"></span>
+                  <div>
+                    <p class="et-label">Tier I — Plan License</p>
+                    <p class="et-sublabel">Engineering drawings for your own contractor</p>
+                  </div>
+                </button>
+                <button type="button" class="enquiry-type-btn" data-type="turnkey" onclick="selectType(this)">
+                  <span class="et-dot"></span>
+                  <div>
+                    <p class="et-label">Tier II — Turnkey Build</p>
+                    <p class="et-sublabel">Our crew builds at your existing property</p>
+                  </div>
+                </button>
+                <button type="button" class="enquiry-type-btn" data-type="acquisition" onclick="selectType(this)">
+                  <span class="et-dot"></span>
+                  <div>
+                    <p class="et-label">Tier III — Full Acquisition</p>
+                    <p class="et-sublabel">Property sourcing, legal handling, and complete build</p>
+                  </div>
+                </button>
+                <button type="button" class="enquiry-type-btn" data-type="general" onclick="selectType(this)">
+                  <span class="et-dot"></span>
+                  <div>
+                    <p class="et-label">General Enquiry</p>
+                    <p class="et-sublabel">Questions, information, or a conversation</p>
+                  </div>
+                </button>
+              </div>
+              <input type="hidden" id="enquiry-type-input" name="enquiry_type" value="license">
+            </div>
+
+            <!-- Plan preference (shown for license type) -->
+            <div class="mb-5" id="plan-field">
+              <label class="form-label" for="plan">Plan of Interest</label>
+              <select class="form-input" id="plan" name="plan">
+                <option value="" disabled>Select a plan</option>
+                <option value="sentinel">The Sentinel — 24m² (Solo / Couple)</option>
+                <option value="redoubt">The Redoubt — 96m² (Family)</option>
+                <option value="citadel" selected>The Citadel — 216m² (Extended-Stay, Most Popular)</option>
+                <option value="sovereign">The Sovereign — 500m²+ (Survival Estate)</option>
+                <option value="unsure">Unsure — need guidance</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+              <div>
+                <label class="form-label" for="fullname">Full Name</label>
+                <input class="form-input" type="text" id="fullname" name="fullname" placeholder="Your full name" required autocomplete="name">
+              </div>
+              <div>
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <label class="form-label" for="country">Country of Residence</label>
+              <select class="form-input" id="country" name="country" required>
+                <option value="" disabled selected>Select country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="AU">Australia</option>
+                <option value="GB">United Kingdom</option>
+                <option value="NZ">New Zealand</option>
+                <option value="SG">Singapore</option>
+                <option value="AE">UAE</option>
+                <option value="CH">Switzerland</option>
+                <option value="OTHER">Other</option>
+              </select>
+            </div>
+
+            <div class="mb-5">
+              <label class="form-label" for="build-location">Intended Build Location</label>
+              <input class="form-input" type="text" id="build-location" name="build_location" placeholder="Country / state / region (or 'undecided')">
+            </div>
+
+            <div class="mb-5">
+              <label class="form-label" for="timeline">Timeline</label>
+              <select class="form-input" id="timeline" name="timeline">
+                <option value="" disabled selected>Select timeline</option>
+                <option value="asap">Immediately — ready to proceed</option>
+                <option value="6mo">Within 6 months</option>
+                <option value="12mo">Within 12 months</option>
+                <option value="24mo">1–2 years</option>
+                <option value="planning">Planning phase — no fixed timeline</option>
+              </select>
+            </div>
+
+            <div class="mb-7">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input" id="message" name="message" rows="5" placeholder="Tell us about your requirements, site (if known), any constraints, and what you'd like from an initial conversation. All information is treated as confidential."></textarea>
+            </div>
+
+            <!-- NDA checkbox -->
+            <div class="flex gap-3 items-start mb-6">
+              <input type="checkbox" id="nda-confirm" name="nda_confirm" required style="width:14px;height:14px;flex-shrink:0;margin-top:0.2rem;accent-color:#C4962A;cursor:pointer;">
+              <label for="nda-confirm" class="text-bunker-muted cursor-pointer" style="font-size:0.78rem;line-height:1.65;">I understand that this enquiry is protected by Saferoom &amp; Bunker Co.'s standard NDA, and that my information will not be shared with any third party.</label>
+            </div>
+
+            <button type="submit" class="btn-brass w-full justify-center" style="font-size:0.9rem;">
+              Submit Enquiry — Confidentially
+            </button>
+
+            <p class="text-center mt-5 text-bunker-muted" style="font-size:0.7rem;line-height:1.7;letter-spacing:0.02em;">
+              Saferoom &amp; Bunker Co. · plans@saferoombunker.com · Auckland, New Zealand<br>
+              All enquiries are treated as confidential from receipt.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHAT HAPPENS NEXT -->
+  <section class="relative py-24 texture-grid" style="background:#141412;">
+    <div class="relative z-10 max-w-6xl mx-auto px-6">
+      <div class="mb-14 text-center fade-up">
+        <p class="eyebrow mb-4">After You Enquire</p>
+        <h2 class="h-display text-4xl md:text-5xl text-bunker-text">WHAT HAPPENS<br>NEXT</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-0 items-start">
+
+        <div class="fade-up" data-delay="1">
+          <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-0 pb-8 md:pb-0">
+            <div class="flex-shrink-0 md:mb-6">
+              <div class="w-12 h-12 rounded-full border flex items-center justify-center" style="border-color:rgba(196,150,42,0.5);">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="4" width="12" height="12" stroke="#C4962A" stroke-width="1.2"/><path d="M7 9h6M7 12h4" stroke="#C4962A" stroke-width="1" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <div class="md:text-center md:px-3">
+              <p class="font-display text-bunker-brass" style="font-size:3rem;line-height:1;opacity:0.2;margin-bottom:-0.4rem;">01</p>
+              <h3 class="font-serif text-base text-bunker-text mb-2">Enquiry Received</h3>
+              <p class="text-bunker-muted text-sm" style="line-height:1.7;">Your enquiry is received and reviewed by a member of our senior team. NDA protection applies immediately.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block" style="flex:1;height:1px;background:linear-gradient(to right,rgba(196,150,42,0.4),rgba(196,150,42,0.1));margin-top:24px;"></div>
+
+        <div class="fade-up" data-delay="2">
+          <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-0 pb-8 md:pb-0">
+            <div class="flex-shrink-0 md:mb-6">
+              <div class="w-12 h-12 rounded-full border flex items-center justify-center" style="border-color:rgba(196,150,42,0.5);">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 14C4 8 16 8 16 8M10 5L14 9L10 13" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="md:text-center md:px-3">
+              <p class="font-display text-bunker-brass" style="font-size:3rem;line-height:1;opacity:0.2;margin-bottom:-0.4rem;">02</p>
+              <h3 class="font-serif text-base text-bunker-text mb-2">Initial Response</h3>
+              <p class="text-bunker-muted text-sm" style="line-height:1.7;">Within 48 hours we respond with relevant information — plan details, pricing structure, and any clarifying questions about your requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block" style="flex:1;height:1px;background:linear-gradient(to right,rgba(196,150,42,0.4),rgba(196,150,42,0.1));margin-top:24px;"></div>
+
+        <div class="fade-up" data-delay="3">
+          <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-0 pb-8 md:pb-0">
+            <div class="flex-shrink-0 md:mb-6">
+              <div class="w-12 h-12 rounded-full border flex items-center justify-center" style="border-color:rgba(196,150,42,0.5);">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#C4962A" stroke-width="1.2"/><path d="M7 10l2 2 4-4" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="md:text-center md:px-3">
+              <p class="font-display text-bunker-brass" style="font-size:3rem;line-height:1;opacity:0.2;margin-bottom:-0.4rem;">03</p>
+              <h3 class="font-serif text-base text-bunker-text mb-2">Proceed or Not</h3>
+              <p class="text-bunker-muted text-sm" style="line-height:1.7;">If you wish to proceed, we move to a formal license agreement and delivery of drawings. No obligation until you sign. NDA remains in force either way.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block" style="flex:1;height:1px;background:linear-gradient(to right,rgba(196,150,42,0.4),rgba(196,150,42,0.1));margin-top:24px;"></div>
+
+        <div class="fade-up" data-delay="4">
+          <div class="flex md:flex-col items-start md:items-center gap-4 md:gap-0 pb-8 md:pb-0">
+            <div class="flex-shrink-0 md:mb-6">
+              <div class="w-12 h-12 rounded-full border flex items-center justify-center" style="border-color:rgba(196,150,42,0.5);">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4v12" stroke="#C4962A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <div class="md:text-center md:px-3">
+              <p class="font-display text-bunker-brass" style="font-size:3rem;line-height:1;opacity:0.2;margin-bottom:-0.4rem;">04</p>
+              <h3 class="font-serif text-base text-bunker-text mb-2">Build Begins</h3>
+              <p class="text-bunker-muted text-sm" style="line-height:1.7;">You receive your engineering drawings, schedule your included consultation, and take the plans to your chosen contractor. Your build is underway.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-bunker-surface border-t border-bunker-border py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <p class="font-display text-bunker-brass text-xl tracking-widest mb-3" style="letter-spacing:0.1em;">SAFEROOM <span style="color:#C4962A;">&amp;</span> BUNKER CO.</p>
+          <p class="font-serif italic text-bunker-muted text-sm mb-4">Built Below. Built to Last.</p>
+          <p class="text-bunker-muted text-xs" style="line-height:1.8;">New Zealand's leading designer and licensor of engineer-certified underground bunker and saferoom plans. Serving principals worldwide since 2020.</p>
+        </div>
+        <div>
+          <p class="font-display text-bunker-brass text-sm tracking-widest mb-5" style="letter-spacing:0.2em;">PLANS</p>
+          <nav><ul class="space-y-3">
+            <li><a href="plans/the-sentinel.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Sentinel — 24m²</a></li>
+            <li><a href="plans/the-redoubt.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Redoubt — 96m²</a></li>
+            <li><a href="plans/the-citadel.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Citadel — 216m²</a></li>
+            <li><a href="plans/the-sovereign.html" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">The Sovereign — 500m²+</a></li>
+          </ul></nav>
+        </div>
+        <div>
+          <p class="font-display text-bunker-brass text-sm tracking-widest mb-5" style="letter-spacing:0.2em;">CONTACT</p>
+          <address class="not-italic space-y-3">
+            <p class="text-bunker-muted text-sm">Auckland, New Zealand</p>
+            <p><a href="mailto:plans@saferoombunker.com" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">plans@saferoombunker.com</a></p>
+            <p><a href="tel:+64220916407" class="text-bunker-muted text-sm hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;">+64 22 091 6407</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="border-t border-bunker-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="text-bunker-muted text-xs" style="letter-spacing:0.03em;">© 2026 Saferoom &amp; Bunker Co. Ltd. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="privacy.html" class="text-bunker-muted text-xs hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;letter-spacing:0.05em;">Privacy Policy</a>
+          <a href="terms.html" class="text-bunker-muted text-xs hover:text-bunker-brass transition-colors duration-200" style="text-decoration:none;letter-spacing:0.05em;">Terms of Engagement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav
+    const nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>nav.classList.toggle('nav-scrolled',window.scrollY>60),{passive:true});
+    const toggle=document.getElementById('nav-toggle'),mobileMenu=document.getElementById('mobile-menu'),ham1=document.getElementById('ham1'),ham2=document.getElementById('ham2'),ham3=document.getElementById('ham3');
+    if(toggle){toggle.addEventListener('click',()=>{const o=mobileMenu.classList.toggle('open');ham1.style.transform=o?'translateY(7px) rotate(45deg)':'';ham2.style.opacity=o?'0':'1';ham3.style.transform=o?'translateY(-5px) rotate(-45deg)':'';ham3.style.width=o?'20px':'12px';})}
+
+    // Fade-up
+    const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+    // Enquiry type selector
+    function selectType(btn) {
+      document.querySelectorAll('.enquiry-type-btn').forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');
+      const type = btn.getAttribute('data-type');
+      document.getElementById('enquiry-type-input').value = type;
+      const planField = document.getElementById('plan-field');
+      planField.style.display = (type==='license') ? 'block' : 'none';
+    }
+
+    // Pre-select plan from URL param
+    const urlParams = new URLSearchParams(window.location.search);
+    const planParam = urlParams.get('plan');
+    if (planParam) {
+      const planSelect = document.getElementById('plan');
+      if (planSelect) {
+        for (let opt of planSelect.options) {
+          if (opt.value === planParam) { opt.selected = true; break; }
+        }
+      }
+    }
+
+    // Form submit
+    const form = document.getElementById('enquiry-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = form.querySelector('[type="submit"]');
+        btn.textContent = 'ENQUIRY RECEIVED — WE\'LL BE IN TOUCH WITHIN 48 HOURS';
+        btn.disabled = true;
+        btn.style.background = '#2A2A26';
+        btn.style.color = '#C4962A';
+        btn.style.border = '1px solid rgba(196,150,42,0.3)';
+        btn.style.cursor = 'default';
+      });
+    }
+  </script>
+</body>
+</html>
