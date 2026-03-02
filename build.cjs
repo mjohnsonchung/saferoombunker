@@ -17,6 +17,9 @@ const pages = [
   'index.html','404.html','privacy.html','about.html','why-nz.html',
   'contact.html','services.html','terms.html',
   'new-zealand-best-bunker-location.html',
+  'underground-bunker-cost.html',
+  'bunker-vs-saferoom.html',
+  'underground-bunker-construction-timeline.html',
   'plans/the-citadel.html','plans/the-sentinel.html',
   'plans/the-redoubt.html','plans/the-sovereign.html'
 ];
