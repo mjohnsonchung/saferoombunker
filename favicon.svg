@@ -1,13 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Background -->
-  <rect width="32" height="32" fill="#0D0D0B"/>
-  <!-- Ground line -->
-  <rect x="3" y="13" width="26" height="1.5" fill="#C4962A"/>
-  <!-- Underground bunker outline -->
-  <rect x="7" y="17" width="18" height="11" fill="none" stroke="#C4962A" stroke-width="1.5"/>
-  <!-- Hatch / entry shaft -->
-  <rect x="13" y="13" width="6" height="4" fill="none" stroke="#C4962A" stroke-width="1.2"/>
-  <!-- Above-ground hint lines -->
-  <rect x="3" y="7" width="16" height="1" fill="#C4962A" opacity="0.25"/>
-  <rect x="3" y="10" width="10" height="1" fill="#C4962A" opacity="0.15"/>
+  <text x="16" y="23" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle" letter-spacing="0.5">SBC</text>
 </svg>
